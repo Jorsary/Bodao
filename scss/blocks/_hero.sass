@@ -1,26 +1,39 @@
 .hero
+    &__wrapper
+        background: url(../image/hero-back.svg)
+        background-repeat: no-repeat
+        background-position: top
+        background-size: contain
     &__container
 
     &__wrap
-        border: 2px solid red
+
         min-height: 750px
+        max-width: 1291px
         width: 100%
-        background: url(../image/hero-back.svg)
-        background-repeat: no-repeat
-        background-position: bottom
-        background-size: contain
+
         display: flex
         flex-direction: column
-        padding-top: 100px
         justify-content: space-between
-        
+        @media screen and (max-width:$ipad)
+            min-height: 628px
+            align-items: flex-start
+        @media screen and (max-width:$android)
+            background-position: top
+            justify-content: start
+            background: none
 
     &__title
-        font-weight: 500
+        font-weight: 700
         font-size: 24px
         line-height: 130%
-        width: 330px
-        
+        max-width: 330px
+        width: 100%
+        @media screen and (max-width:$ipad)
+            font-size: 16px
+        @media screen and (max-width:$android)
+            font-size: 14px
+            margin: 0
 
     &__name
         font-weight: 700
@@ -28,24 +41,45 @@
         line-height: 120%
         text-transform: uppercase
         text-align: center
-        
-        
-        
+        max-width: 1291px
+        width: 100%
+        @media screen and (max-width:$ipad)
+            font-size: 64px
+            text-align: start
+        @media screen and (max-width:$android)
+            font-size: 44px
+            margin-top: 30px
 
     &__menu
         display: flex
-        align-content: center 
         justify-content: space-between
-        
+        position: relative
+        @media screen and (max-width:$ipad)
+            flex-direction: column
+            align-items: flex-start
+            margin-top: 30px
+
     &__desc
         font-weight: 500
         font-size: 18px
         line-height: 150%
-        width: 30%
-        min-width:  360px
-        
+        max-width: 410px
+        width: 100%
+        @media screen and (max-width:$ipad)
+            font-size: 16px
+        @media screen and (max-width:$android)
+            font-size: 14px
+
+    &__btn-block
+        display: flex
+        align-items: center
+        max-width: 387px
+        width: 100%
+        margin-left: 71px
+        @media screen and (max-width:$ipad)
+            margin: 40px 0px
+
     &__button
+
         align-self: center
         padding: 15px 40px
-        
-        

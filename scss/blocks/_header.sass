@@ -1,0 +1,77 @@
+
+.header
+
+
+
+    &__wrap
+        display: grid
+        grid-template: 'a b c'
+        justify-content: space-between
+        margin-bottom: 30px
+        @media screen and (max-width:$ipad)
+            grid-template: 'a c' 'b b'
+
+    &__logo
+        grid-area: a
+        @media screen and (max-width:$ipad)
+            height: 100px
+            width: 100px
+        @media screen and (max-width:$android)
+            height: 48px
+            width: 48px
+
+    &__address
+        grid-area: b
+        display: flex
+        align-items: center
+        gap: 15px
+        @media screen and (max-width:$ipad)
+            gap: 10px
+
+    &__address-img
+        @media screen and (max-width:$ipad)
+            height: 25px
+        @media screen and (max-width:$android)
+            height: 20px
+    &__labels
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        grid-area: adr
+        gap: 10px
+        font-weight: 500
+        font-size: 16px
+        line-height: 150%
+        cursor: pointer
+        @media screen and (max-width:$ipad)
+            font-size: 14px
+        @media screen and (max-width:$android)
+            font-size: 13px
+    &__phone
+        display: flex
+        align-items: center
+    &__phone-img
+        margin-right: 15px
+        align-self: center
+        @media screen and (max-width:$ipad)
+            margin-right: 10px
+            height: 25px
+        @media screen and (max-width:$android)
+            height: 20px
+    &__phone-call
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+    &__phone-nmbr
+        font-weight: 700
+        font-size: 20px
+        line-height: 150%
+        text-decoration: none
+        @media screen and (max-width:$ipad)
+            font-size: 16px
+    &__phone-whatsup
+        font-weight: 400
+        font-size: 12px
+        line-height: 150%
+        @media screen and (max-width:$ipad)
+            font-size: 10px

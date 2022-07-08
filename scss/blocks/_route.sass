@@ -1,0 +1,66 @@
+.route
+    &__title
+        font-weight: 700
+        font-size: 72px
+        line-height: 120%
+        margin-bottom: 100px
+        @media screen and (max-width:$ipad)
+            font-size: 36px
+            margin-bottom: 80px
+        @media screen and (max-width:$android)
+            font-size: 24px
+            margin-bottom: 60px
+    &__wrap
+        display: grid
+        grid-template: 'a b c d'
+        grid-template-columns: 25% 25% 25% 25%
+        margin-bottom: 150px
+        overflow: hidden
+        
+        @media screen and (max-width:1550px)
+            grid-template: 'a b' 'c d'
+            grid-template-columns: 50% 50%
+            margin-bottom: 80px
+        @media screen and (max-width:700px)
+            grid-template: 'a' 'b' 'c' 'd'
+            margin-bottom: 60px
+
+    
+
+    &__block
+        display: flex
+        text-align: center
+        align-items: center
+        justify-content: center
+        height: 750px
+        background-repeat: no-repeat
+        background-position: center top
+        background-size: cover
+        cursor: pointer
+        transition: 0.2s
+        transition-duration: 0.2s
+        
+        
+    &__block:hover
+        transform: scale(1.05)
+        
+        
+
+    &__name
+        color: transparent
+        -webkit-text-stroke: 3px #fff
+        font-weight: 500
+        font-size: 48px
+        line-height: 120%
+        @media screen and (max-width:$ipad)
+            font-size: 36px
+            -webkit-text-stroke: 2px #fff
+
+._block1
+    grid-area: a
+._block2
+    grid-area: b
+._block3
+    grid-area: c
+._block4
+    grid-area: d

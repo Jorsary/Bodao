@@ -1,0 +1,70 @@
+.footer
+    margin-bottom: 150px
+    &__wrap
+        display: flex
+        align-items: center
+        gap: 20px
+        @media screen and (max-width:$android)
+            flex-direction: column
+
+    &__socnet
+        width: 394px
+        height: 410px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        @media screen and (max-width:$android)
+            width: 320px
+            align-items: center
+            text-align: center
+            margin-bottom: 40px
+
+    &__links-socnet
+        width: 230px
+        display: flex
+        justify-content: space-between
+    &__desc
+        font-weight: 500
+        font-size: 18px
+        line-height: 150%
+        
+        @media screen and (max-width:$ipad)
+            font-size: 14px
+    &__sections
+        display: flex
+        flex-direction: column
+        padding: 65px 150px
+        @media screen and (max-width:$ipad)
+            display: none
+
+    &__title
+        margin-bottom: 63px
+        @media screen and (max-width:$ipad)
+            display: none
+
+    &__links
+        display: flex
+        flex-direction: column
+        gap: 30px
+
+    &__commun
+        display: flex
+        flex-direction: column
+        gap: 30px
+    &__blocks
+        display: flex
+        flex-direction: column
+        gap: 13px
+
+    &__way
+        font-weight: 700
+        font-size: 12px
+        line-height: 14px
+        text-transform: uppercase
+        color: #F9BA50
+    &__link
+        font-weight: 700
+        font-size: 18px
+        line-height: 21px
+
+        color: #FFFFFF

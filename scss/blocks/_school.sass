@@ -1,39 +1,54 @@
 .school
     &__wrap
         display: grid
-        margin-top: 151px
         justify-items: flex-start
+        align-items: center
         grid-template: 'img title' 'img desc' 'img btn'
-        min-height: 913px
-        height: 100%
-        gap: 0 100px
-        @media screen and (max-width:$ipad)
-            min-height: 533px
-        @media screen and (max-width:$android)
-    &__composition
-        position: relative
-        grid-area: img
-       
-    &__box1
         
+        height: 100%
+        gap: 20px 5%
+        grid-template-columns: 50% auto
+        margin-bottom: 10%
+        @media screen and (max-width:$ipad)
+            min-height: 600px
+            grid-template: 'title' 'img' 'desc' 'button'
+            gap: 20px
+        @media screen and (max-width:$android)
+            
+    &__composition
+        grid-area: img
+        
+    &__box1
+        width: 100%
+        height: auto
     &__box2
-        position: absolute
-        top: 493px
-        left: 239px
+        width: 70%
+        height: auto
+        margin-top: -47%
+        margin-left: 35%
         border: 2px solid #FFFFFF
         border-radius: 300px
-        padding: 18px
-    &__long-arrow
-        position: absolute
-        top: 700px
-        left: 663px
+        padding: 4%
+
     &__title
         grid-area: title
+        font-weight: 700
+        font-size: 72px
+        line-height: 120%
+        @media screen and (max-width:$ipad)
+            font-size: 36px
     &__desc
         grid-area: desc
-        max-width: 520px
-        width: 100%
+        font-weight: 500
+        font-size: 18px
+        line-height: 170%
+        @media screen and (max-width:$ipad)
+            font-size: 16px
+        @media screen and (max-width:$android)
+            font-size: 14px
+
     &__button
         grid-area: btn
-    &__arrow
-        visibility: hidden
+        @media screen and (max-width:$ipad)
+            padding: 15px 40px
+    

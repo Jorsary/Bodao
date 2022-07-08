@@ -1,0 +1,93 @@
+.schedule
+
+    &__wrap
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        gap: 30px
+        margin-bottom: 100px
+
+        @media screen and (max-width:$ipad)
+            grid-template-columns: repeat(2, 1fr)
+        @media screen and (max-width:$android)
+            display: flex
+            flex-direction: column
+
+    &__title
+        font-weight: 700
+        font-size: 72px
+        line-height: 120%
+        text-transform: uppercase
+        margin-bottom: 100px
+        @media screen and (max-width:$ipad)
+            font-size: 36px
+        @media screen and (max-width:$android)
+            font-size: 24px
+    &__block
+        min-height: 540px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        background-color: #17171A
+        padding: 30px
+        align-items: flex-start
+        @media screen and (max-width:$ipad)
+            min-height: 401px
+
+    &__dates
+        display: flex
+        justify-content: space-between
+        width: 100%
+        align-items: flex-end
+
+    &__duration
+        font-weight: 700
+        font-size: 36px
+        line-height: 120%
+        @media screen and (max-width:$ipad)
+            font-size: 24px
+        @media screen and (max-width:$android)
+
+    &__howmany
+        font-weight: 400
+        font-size: 16px
+        line-height: 120%
+        @media screen and (max-width:$ipad)
+            font-size: 16px
+        @media screen and (max-width:$android)
+
+    &__desc
+        font-weight: 500
+        font-size: 18px
+        line-height: 150%
+        @media screen and (max-width:$ipad)
+            font-size: 14px
+        @media screen and (max-width:$android)
+
+    &__price
+        display: flex
+        justify-content: space-between
+        width: 100%
+        align-items: flex-end
+
+    &__real-price
+        font-weight: 700
+        font-size: 36px
+        line-height: 120%
+        @media screen and (max-width:$ipad)
+            font-size: 30px
+        @media screen and (max-width:$android)
+
+    &__cross-price
+        text-decoration-line: line-through
+        font-weight: 700
+        font-size: 24px
+        line-height: 120%
+        @media screen and (max-width:$ipad)
+            font-size: 18px
+        @media screen and (max-width:$android)
+
+    &__button
+        font-size: 18px
+        @media screen and (max-width:$ipad)
+            font-size: 14px
+            padding: 9px 30px

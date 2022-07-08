@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Bodao Team</title>
 </head>
+<style>
+    html {
+        scroll-behavior: smooth;
+        /* свойство scroll-behavior не наследуется, применяется к прокручиваемым блокам */
+    }
+</style>
 
 <body bgcolor="#00000">
     <div class="wrapper">
@@ -16,7 +22,7 @@
             <div class="_container header__container">
                 <div class="header__wrap">
 
-                    <img src="/image/logo.svg" class="header__logo" alt="Logo">
+                    <div class="_logo header__logo" alt="Logo"></div>
 
                     <div class="header__address">
                         <img src="image/address-label.svg" alt="" class="header__address-img">
@@ -51,7 +57,8 @@
 
                         </p>
                         <div class="hero__menu">
-                            <p class="hero__desc _dsk">У Бодао более 50 проф поединков за плечами, он проводил бои в лучших
+                            <p class="hero__desc _dsk">У Бодао более 50 проф поединков за плечами, он проводил бои в
+                                лучших
                                 лигах
                                 ММА
                                 мира, 5 лет в UFC и 3 года в PFL. И теперь он открыл свои клубы в России что бы
@@ -70,13 +77,13 @@
 
 
         </section>
-        <section class="school">
+        <section id=school class="school">
             <div class="_container school__container">
-                <div class="school__wrap">
+                <div  class="school__wrap">
                     <div class="school__composition">
                         <img src="image/box.svg" alt="" class="school__box1">
                         <img src="image/box2.svg" alt="" class="school__box2">
-                        <img src="image/Arrow-long.svg" alt="" class="school__long-arrow">
+
                     </div>
                     <h2 class="school__title _ttl">О школе</h2>
                     <p class="school__desc _dsk">О школе
@@ -91,7 +98,8 @@
                         верифицированы.
                         Являясь всего лишь частью общей картины, акционеры крупнейших компаний будут</p>
                     <div class="school__btn__block">
-                        <button class="_btn school_button"><img src="image/right-arrow.svg" alt="" class="school__arrow">
+                        <button class="_btn school_button"><img src="image/right-arrow.svg" alt=""
+                                class="school__arrow">
                             Записаться</button>
                     </div>
 
@@ -100,8 +108,209 @@
 
             </div>
         </section>
+        <section id="coach" class="coach">
+            <div class="_container coach__container">
+                <h2 class="coach__title">Тренеры</h2>
+                <div class="coach__wrap">
+                    <div class="coach__block">
+                        <div class="coach__prew"><img src="image/coach1.jpg" alt="" class="coach__image"></div>
+                        <div class="coach__content">
+                            <h2 class="coach__name">Франсимар Барросо</h2>
 
-    </div>
+                            <p class="coach__desc">Тренер по бразильскому джиу-джитсу, MMA и боксу, персональный
+                                тренер.
+                                Единственный в России чёрный пояс 4 дана по бразильскому джиу-джитсу. Чёрный пояс по
+                                кикбоксингу. Профессиональный боец MMA , выступающий в лучших организация в мире , 5 лет
+                                в
+                                UFC и 3 года в PFL.</p>
+                        </div>
+
+                    </div>
+                    <div class="coach__block">
+                        <div class="coach__prew"><img src="image/coach2.jpeg" alt="" class="coach__image"></div>
+                        <div class="coach__content">
+                            <h2 class="coach__name">Анастасия Мотяшова</h2>
+                            <p class="coach__desc">Женский и детский тренер. Мастер спорта по кикбоксингу. КМС по
+                                кикбоксингу. 2-х кратная чемпионка Европы. Пурпурный пояс по бразильскому джиу-джитсу.
+                                Профессиональный боец ММА , бокс, кикбоксинг</p>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <section id="route" class="route">
+            <div class="_container route__container">
+                <h2 class="route__title">Направления</h2>
+            </div>
+            <div class="route__wrap">
+                <div class="route__block _block1" style='background-image: url(/image/box.png)'>
+                    <h2 class="route__name">Бокс</h2>
+                </div>
+                <div class="route__block _block2" style='background-image: url(/image/kick.png)'>
+                    <h2 class="route__name">Кикбоксинг</h2>
+
+                </div>
+                <div class="route__block _block3" style='background-image: url(/image/mma.png)'>
+                    <h2 class="route__name">ММА</h2>
+                </div>
+                <div class="route__block _block4" style='background-image: url(/image/jiu.png)'>
+                    <h2 class="route__name">Бразильское джиу джитсу</h2>
+                </div>
+            </div>
+        </section>
+        <section id="schedule" class="schedule">
+            <div class="_container schedule__container">
+                <h2 class="schedule__title">расписание занятий
+                </h2>
+                <div class="schedule__wrap">
+
+                    <div class="schedule__block">
+                        <div class="schedule__dates">
+                            <p class="schedule__duration">1 День</p>
+                            <p class="schedule__how-many">3 раза в неделю</p>
+                        </div>
+                        <p class="schedule__desc">Как уже неоднократно упомянуто, реплицированные с зарубежных
+                            источников, современные исследования представлены в исключительно положительном свете. Как
+                            принято считать, активно развивающиеся.</p>
+                        <div class="schedule__price">
+                            <p class="schedule__real-price">41 788 ₽</p>
+                            <p class="schedule__cross-price">41 788 ₽</p>
+                        </div>
+                        <button class="_btn schedule__button"><img src="image/right-arrow.svg"
+                                alt="">Записаться</button>
+                    </div>
+                    <div class="schedule__block">
+                        <div class="schedule__dates">
+                            <p class="schedule__duration">1 День</p>
+                            <p class="schedule__how-many">3 раза в неделю</p>
+                        </div>
+                        <p class="schedule__desc">Как уже неоднократно упомянуто, реплицированные с зарубежных
+                            источников, современные исследования представлены в исключительно положительном свете. Как
+                            принято считать, активно развивающиеся.</p>
+                        <div class="schedule__price">
+                            <p class="schedule__real-price">41 788 ₽</p>
+                            <p class="schedule__cross-price">41 788 ₽</p>
+                        </div>
+                        <button class="_btn schedule__button"><img src="image/right-arrow.svg"
+                                alt="">Записаться</button>
+                    </div>
+                    <div class="schedule__block">
+                        <div class="schedule__dates">
+                            <p class="schedule__duration">1 День</p>
+                            <p class="schedule__how-many">3 раза в неделю</p>
+                        </div>
+                        <p class="schedule__desc">Как уже неоднократно упомянуто, реплицированные с зарубежных
+                            источников, современные исследования представлены в исключительно положительном свете. Как
+                            принято считать, активно развивающиеся.</p>
+                        <div class="schedule__price">
+                            <p class="schedule__real-price">41 788 ₽</p>
+                            <p class="schedule__cross-price">41 788 ₽</p>
+                        </div>
+                        <button class="_btn schedule__button"><img src="image/right-arrow.svg"
+                                alt="">Записаться</button>
+                    </div>
+                    <div class="schedule__block">
+                        <div class="schedule__dates">
+                            <p class="schedule__duration">1 День</p>
+                            <p class="schedule__how-many">3 раза в неделю</p>
+                        </div>
+                        <p class="schedule__desc">Как уже неоднократно упомянуто, реплицированные с зарубежных
+                            источников, современные исследования представлены в исключительно положительном свете. Как
+                            принято считать, активно развивающиеся.</p>
+                        <div class="schedule__price">
+                            <p class="schedule__real-price">41 788 ₽</p>
+                            <p class="schedule__cross-price">41 788 ₽</p>
+                        </div>
+                        <button class="_btn schedule__button"><img src="image/right-arrow.svg"
+                                alt="">Записаться</button>
+                    </div>
+                    <div class="schedule__block">
+                        <div class="schedule__dates">
+                            <p class="schedule__duration">1 День</p>
+                            <p class="schedule__how-many">3 раза в неделю</p>
+                        </div>
+                        <p class="schedule__desc">Как уже неоднократно упомянуто, реплицированные с зарубежных
+                            источников, современные исследования представлены в исключительно положительном свете. Как
+                            принято считать, активно развивающиеся.</p>
+                        <div class="schedule__price">
+                            <p class="schedule__real-price">41 788 ₽</p>
+                            <p class="schedule__cross-price">41 788 ₽</p>
+                        </div>
+                        <button class="_btn schedule__button"><img src="image/right-arrow.svg"
+                                alt="">Записаться</button>
+                    </div>
+                    <div class="schedule__block">
+                        <div class="schedule__dates">
+                            <p class="schedule__duration">1 День</p>
+                            <p class="schedule__how-many">3 раза в неделю</p>
+                        </div>
+                        <p class="schedule__desc">Как уже неоднократно упомянуто, реплицированные с зарубежных
+                            источников, современные исследования представлены в исключительно положительном свете. Как
+                            принято считать, активно развивающиеся.</p>
+                        <div class="schedule__price">
+                            <p class="schedule__real-price">41 788 ₽</p>
+                            <p class="schedule__cross-price">41 788 ₽</p>
+                        </div>
+                        <button class="_btn schedule__button"><img src="image/right-arrow.svg"
+                                alt="">Записаться</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="_container footer__container">
+                <div class="footer__wrap">
+                    <div class="footer__socnet">
+                        <div class="_logo footer__logo"></div>
+                        <p class="footer__desc">Как уже неоднократно упомянуто, реплицированные с зарубежных источников,
+                            современные исследования представлены в исключительно положительном свете. Как принято
+                            считать,
+                            активно развивающиеся.</p>
+                        <div class="footer__links-socnet">
+                            <a href="" class="footer__facebook"><img src="image/icons8-facebook-f.svg" alt=""></a>
+                            <a href="" class="footer__twitter"><img src="image/icons8-twitter.svg" alt=""></a>
+                            <a href="" class="footer__linkedin"><img src="image/icons8-linkedin-2 1.svg" alt=""></a>
+                            <a href="" class="footer__instagram"><img src="image/icons8-instagram (1) 1.svg" alt=""></a>
+                        </div>
+                        <a href="" class="footer__privacy-policy">Политика конфедициальности</a>
+                    </div>
+                    <div class="footer__sections">
+                        <h2 class="footer__title">Разделы сайта</h2>
+                        <nav class="footer__links">
+                            <a href="#school" class="footer__section">О школе</a>
+                            <a href="#coach" class="footer__section">Тренеры</a>
+                            <a href="#route" class="footer__section">Направления</a>
+                            <a href="#schedule" class="footer__section">Расписание занятий</a>
+                        </nav>
+                    </div>
+                    <div class="footer__contacts">
+                        <h2 class="footer__title">Контакты</h2>
+                        <div class="footer__commun">
+                            <div class="footer__blocks">
+                                <p class="footer__way">Номер телефона; What’s app</p>
+                                <a href=tel:+79099330059 class="footer__link">+7(909)933-00-59</a>
+                            </div>
+                            <div class="footer__blocks">
+                                <p class="footer__way">эл.Почта</p>
+                                <a href=mailto:nestya@inbox.ru class="footer__link">nestya@inbox.ru</a>
+                            </div>
+                            <div class="footer__blocks">
+                                <p class="footer__way">адреса залов</p>
+                                <p class="footer__link">Москва, 1-ый Партийный пер., 1, стр. 57, к. 3.</p>
+                                <p class="footer__link">Мытищи, Летная 40к1 домофон 1.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </footer>
 
 </body>
 

@@ -1,5 +1,5 @@
-$ipad: 786px
-$android: 500px
+$ipad: 1200px
+$android: 760px
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap')
 
@@ -13,22 +13,10 @@ $android: 500px
 
 @import 'blocks/school'
 
-._ttl
-    font-weight: 700
-    font-size: 72px
-    line-height: 120%
-    text-transform: uppercase
-    @media screen and (max-width:$ipad)
-        font-size: 64px
-    @media screen and (max-width:$android)
-        font-size: 44px
+@import 'blocks/coach'
 
-._dsk
-    font-weight: 500
-    font-size: 18px
-    line-height: 150%
+@import 'blocks/route'
 
-    @media screen and (max-width:$ipad)
-        font-size: 16px
-    @media screen and (max-width:$android)
-        font-size: 14px
+@import 'blocks/schedule'
+
+@import 'blocks/footer'
